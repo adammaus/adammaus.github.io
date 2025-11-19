@@ -33,4 +33,6 @@ I avoid the socials but you can find me online at:
 
 And if you want anything to put you to sleep, please check out my [Resume/C.V.](/assets/pdf/maus-2024-resume.pdf) (Last updated October 2024)
 
-{% pdf "/assets/pdf/maus-2024-resume.pdf" %}
+<object data="/assets/pdf/maus-2024-resume.pdf" width="100%" height="600" type="application/pdf">
+   Your browser does not support PDFs. [Download the PDF](/assets/pdf/maus-2024-resume.pdf)
+</object>

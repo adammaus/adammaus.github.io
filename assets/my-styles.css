@@ -1,0 +1,13 @@
+.centered {
+	display: block;
+	margin: 0 auto;
+	text-align: center; /* Used to center text */
+}
+
+.max-width-50-percent {
+	max-width: 50%;
+}
+
+.homepage-feed {
+	list-style: none;
+}

@@ -3,6 +3,7 @@ layout: post
 permalink: "2024/07/nesting-chickadees/"
 title: "Nesting Chickadees"
 date: 2024-07-07T12:00:00-05:00
+excerpt: This year we finally attracted our first family of black-capped chickadees since 2020.
 tags:
   - Backyard
   - Birds

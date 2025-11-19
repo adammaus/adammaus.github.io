@@ -3,6 +3,7 @@ layout: post
 permalink: "2024/09/run-angular-18-karma-unit-tests-in-docker/"
 title: "Run Angular 18 Karma Unit Tests in Docker"
 date: 2024-09-16T10:49:09-05:00
+excerpt: Set up Karm Unit Tests for Angular v18 in a Docker container.
 tags:
   - Angular
   - CI/CD
@@ -32,9 +33,9 @@ customLaunchers: {
 }
 {% endhighlight %}
 
-I personally ran into issues using ChromeHeadless without the “–no-sandbox” flag which is why I had to add the karma.conf.js file and the Custom Launcher in the first place.
+I personally ran into issues using ChromeHeadless without the "–no-sandbox" flag which is why I had to add the karma.conf.js file and the Custom Launcher in the first place.
 
-In _angular.json_, add the following under “tests” > “options” to give you a barebones output for CI/CD. In my case, I still wanted Code Coverage when I run this locally but codeCoverage could be considered optional.
+In _angular.json_, add the following under "tests" > "options" to give you a barebones output for CI/CD. In my case, I still wanted Code Coverage when I run this locally but codeCoverage could be considered optional.
 
 {% highlight bash %}
 "progress": false,
@@ -48,7 +49,7 @@ From here, you should be able to run these tests locally using `$ ng test`.
 
 __Fixing ChromesHeadless error__
 
-If you're like me, you ran into a “Cannot start ChromeHeadless” error during testing. This happens if you don't have Chrome installed such as in a Docker container. This requires you to download and install it:
+If you're like me, you ran into a "Cannot start ChromeHeadless" error during testing. This happens if you don't have Chrome installed such as in a Docker container. This requires you to download and install it:
 
 {% highlight bash %}
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb

@@ -45,7 +45,7 @@ public class Cache
 		if (HttpContext.Current.Session[CacheKey] != null)
 		{
 			Cache.Item item = (Cache.Item)HttpContext.Current.Session[CacheKey];
-			if (item.Expiration &gt;= DateTime.Now)
+			if (item.Expiration >= DateTime.Now)
 			{
 				return item.Data;
 			}

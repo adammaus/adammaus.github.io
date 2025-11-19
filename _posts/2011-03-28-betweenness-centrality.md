@@ -11,7 +11,7 @@ tags:
 ---
 Betweenness Centrality
 
-* The higher a node&#8217;s centrality is the more &#8220;dependent&#8221; other nodes are on it
+* The higher a node's centrality is the more "dependent" other nodes are on it
 * Based on shortest paths between nodes and the number of paths that pass through two points and the total number of paths
 * _BC(i) = SUM<sub>s&ne;i&ne; t&isin;V</sub>&mu;<sub>st</sub>(i) / &mu;<sub>st</sub>_ where _&mu;<sub>st</sub>_ is the number of paths from _s_ and _t_ and _&mu;<sub>st</sub>(i)_ is the number of paths from _s_ and _t_ that pass through node _i_
 

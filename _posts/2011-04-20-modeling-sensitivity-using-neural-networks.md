@@ -21,7 +21,7 @@ The network I will describe is much simpler and only estimates the sensitivities
 ![Neural Network Schematic](/assets/imgs/2011-04-20-modeling-sensitivity-using-neural-networks/image-2.png)
 {:.max-width-50-percent}
 
-The weights, **a** and **b** are an _n_ x _d_ matrix and _n_ x _1_ vector of real numbers, respectively. The 1 is a bias term that shifts neuron&#8217;s value around without being tied to an input. The neural network can be represented by:
+The weights, **a** and **b** are an _n_ x _d_ matrix and _n_ x _1_ vector of real numbers, respectively. The 1 is a bias term that shifts neuron's value around without being tied to an input. The neural network can be represented by:
 
 ![Neural Network Equation](/assets/imgs/2011-04-20-modeling-sensitivity-using-neural-networks/image-3.png)
 {:.max-width-50-percent}

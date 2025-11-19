@@ -8,7 +8,7 @@ tags:
   - "Freeman's Degree Centrality"
   - Social Network Analysis
 ---
-Freeman&#8217;s Approach to Degree Centrality:
+Freeman's Approach to Degree Centrality:
 
 * Centrality is based on connections between nodes in the network
 * Measure in-degree and the out-degree and degree percentage of entire network for each node

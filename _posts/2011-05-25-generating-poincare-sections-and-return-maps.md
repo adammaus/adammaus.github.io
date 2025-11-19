@@ -3,13 +3,14 @@ layout: post
 title: Generating Poincaré Sections and Return Maps
 date: 2011-05-25T19:49:51-05:00
 permalink: 2011/05/generating-poincare-sections-and-return-maps/
+excerpt: Using the iterative 4-th order Runge-Kutta method, we can create low dimensional slices of the system’s attractor known as Poincare Sections, Return maps, or Recurrence maps.
 tags:
   - Chaos
   - ODE
   - Python
   - Time Series
 ---
-Using the iterative 4-th order Runge-Kutta method as described [here](https://blog.adammaus.com/2011/05/generating-time-series-for-ordinary-differential-equations/), we can create low dimensional slices of the system&#8217;s attractor known as Poincare Sections, Return maps, or Recurrence maps.
+Using the iterative 4-th order Runge-Kutta method as described [here](https://blog.adammaus.com/2011/05/generating-time-series-for-ordinary-differential-equations/), we can create low dimensional slices of the system's attractor known as Poincare Sections, Return maps, or Recurrence maps.
 
 We will use the [Rossler attractor](http://en.wikipedia.org/wiki/R%C3%B6ssler_attractor) for this example,
 
@@ -31,7 +32,7 @@ A short time series from the Rosseler Attractor
 {:.centered}
 <br>
 
-Poincare sections are important for visualizing an attractor that is embedded in greater than 3 spatial dimensions. Additionally, certain dynamical and topological properties are invariant to these transformations such as Lyapunov exponents and bifurcation diagrams (See [Sprott 2003](http://sprott.physics.wisc.edu/chaostsa/)). However, the Lyapunov exponent with a value of 0 is lost due to the removal of the direction of the flow.
+Poincare sections are important for visualizing an attractor that is embedded in greater than 3 spatial dimensions. Additionally, certain dynamical and topological properties are invariant to these transformations such as Lyapunov exponents and bifurcation diagrams (See [Sprott 2003](http://sprott.physics.wisc.edu/chaostsa/)). However, the Lyapunov exponent with a value of 0 is lost due to the removal of the direction of the flow.
 
 To build a Poincaré section, imagine that you have selected a slice of phase space. Every time the orbit passes through that slice, we collect a point. We repeat this over and over to create an image of what the attractor looks like in that slice of space.
 

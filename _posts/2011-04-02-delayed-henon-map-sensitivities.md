@@ -10,7 +10,7 @@ tags:
   - Sensitivities
   - Time Series
 ---
-What previous days&#8217; weather affected today&#8217;s weather? Historically, which states&#8217; votes affected the outcome of different presidential elections? How does a single trade affect the price of a stock?
+What previous days' weather affected today's weather? Historically, which states' votes affected the outcome of different presidential elections? How does a single trade affect the price of a stock?
 
 Modelling the weather, politics, and economics would be a very difficult task but we can explore questions like this in less complex mathematical systems such  as the delayed Henon map [1]. The delayed Henon map is a time-delayed system represented by following equation:
 
@@ -52,7 +52,7 @@ We arrive at the following sensitivities for <em>d</em>=4:
 
 **S(4)=.1**
 
-By estimating a system&#8217;s sensitivities, we can determine what is known as the lag space [3]. Dimensions with non-zero sensitivities make up this space and the largest dimension with a non-zero sensitivity also determines the embedding dimension. As we will see in another post, a neural network method can be devised to find the lag space of various time series.
+By estimating a system's sensitivities, we can determine what is known as the lag space [3]. Dimensions with non-zero sensitivities make up this space and the largest dimension with a non-zero sensitivity also determines the embedding dimension. As we will see in another post, a neural network method can be devised to find the lag space of various time series.
 
 References:
 

@@ -3,6 +3,7 @@ layout: post
 permalink: "2024/05/is-that-a-tick-engineering-a-human-in-the-loop-tick-id-system/"
 title: "Is that a tick? Engineering a human-in-the-loop Tick ID system"
 date: 2024-05-29T15:00:00-05:00
+excerpt: Samuel Nowak and I gave a talk about building a deep learning powered pipeline to identify Ticks in The Tick App at the University of Wisconsin – Madison’s IT Professionals Conference in May 2024.
 tags:
   - The Tick App
   - Deep Learning

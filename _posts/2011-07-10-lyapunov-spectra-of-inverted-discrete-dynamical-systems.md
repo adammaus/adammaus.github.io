@@ -12,9 +12,9 @@ tags:
   - Python
   - Time Series
 ---
-One can estimate the Lyapunov spectrum of dynamical systems and their inverted counterparts using local Jacobian matrices and [Wolf&#8217;s algorithm](http://www.google.com/search?q=wolf+alan+lyapunov). Basically, Jacobian matrices are calculated at each point in a trajectory and multiplied together to form a product matrix whose eigenvalues represent the Lyapunov exponents for the system studied. More specifically, these exponents measure the divergence of a ball of initial conditions as they move around an attractor, in this case, a strange attractor. As the Jacobians are multiplied together, Gram-Schmidt reorthonormalization is used to maintain the system of coordinates and unify the divergence because the ball of initial conditions quickly becomes an ellipisoid.
+One can estimate the Lyapunov spectrum of dynamical systems and their inverted counterparts using local Jacobian matrices and [Wolf's algorithm](http://www.google.com/search?q=wolf+alan+lyapunov). Basically, Jacobian matrices are calculated at each point in a trajectory and multiplied together to form a product matrix whose eigenvalues represent the Lyapunov exponents for the system studied. More specifically, these exponents measure the divergence of a ball of initial conditions as they move around an attractor, in this case, a strange attractor. As the Jacobians are multiplied together, Gram-Schmidt reorthonormalization is used to maintain the system of coordinates and unify the divergence because the ball of initial conditions quickly becomes an ellipisoid.
 
-In 1985, Alan Wolf _et al_. published the paper that outlined a program that can be used to determine the spectrum of Lyapunov exponents for system&#8217;s whose equations are known. Wolf&#8217;s algorithm requires that the equations are linearized. After performing the necessary calculations, one can plug them into the program available [here (in Python)](/2011/03/lyapunov-spectrum-for-invertible-maps/) and estimate the Lyapunov spectrum.
+In 1985, Alan Wolf _et al_. published the paper that outlined a program that can be used to determine the spectrum of Lyapunov exponents for system's whose equations are known. Wolf's algorithm requires that the equations are linearized. After performing the necessary calculations, one can plug them into the program available [here (in Python)](/2011/03/lyapunov-spectrum-for-invertible-maps/) and estimate the Lyapunov spectrum.
 
 Here is an example of how to linearize the Henon map and more complex Tinkerbell map:
 
@@ -26,7 +26,7 @@ The Henon map:
 ![Henon Map equation 2](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-2.png)
 {:.max-width-50-percent}
 
-The Henon&#8217;s Jacobian matrix:
+The Henon's Jacobian matrix:
 
 ![Henon Map Jacobian Matrix](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-3.png)
 {:.max-width-50-percent}
@@ -36,7 +36,7 @@ Linearizing the Henon map:
 ![Linerizing the Henon map equation](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-4.png)
 {:.max-width-50-percent}
 
-Partial Code for Wolf&#8217;s algorithm:
+Partial Code for Wolf's algorithm:
 
 {% highlight python %}
 def Henon(x, xnew, n):
@@ -63,7 +63,7 @@ The Tinkerbell map:
 ![Tinkerbell Map equation 2](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-6.png)
 {:.max-width-50-percent}
 
-The Tinkerbell&#8217;s Jacobian matrix:
+The Tinkerbell's Jacobian matrix:
 
 ![Tinkerbell Map Jacobian Matrix](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-7.png)
 {:.max-width-50-percent}
@@ -73,7 +73,7 @@ Linearizing the Tinkerbell map:
 ![Linerizing the Tinkerbell map equation](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-8.png)
 {:.max-width-50-percent}
 
-Partial Code for Wolf&#8217;s algorithm:
+Partial Code for Wolf's algorithm:
 
 {% highlight python %}
 def tinkerbell(x, xnew, n):
@@ -94,9 +94,9 @@ def tinkerbell(x, xnew, n):
 	return [x, xnew]
 {% endhighlight %}
 
-To estimate the Lyapunov spectrum of the inverted system. One can simply reverse the signs on the exponent values of the forward system or take the more roundabout way and estimate them using Wolf&#8217;s algorithm.
+To estimate the Lyapunov spectrum of the inverted system. One can simply reverse the signs on the exponent values of the forward system or take the more roundabout way and estimate them using Wolf's algorithm.
 
-To estimate the exponents, it is necessay to obtain to invert the system&#8217;s equations. In some cases, this is not possible such as the case of the Logistic map where each point could come from one of two previous points. To estimate the inverted system&#8217;s Jacobians (and the inverted system&#8217;s equations), one can simply invert the Jacobian matrix of the forward equations.
+To estimate the exponents, it is necessay to obtain to invert the system's equations. In some cases, this is not possible such as the case of the Logistic map where each point could come from one of two previous points. To estimate the inverted system's Jacobians (and the inverted system's equations), one can simply invert the Jacobian matrix of the forward equations.
 
 For the Henon map:
 
@@ -108,4 +108,4 @@ For the Tinkerbell map (and those with a magnifying glass):
 ![Invert the Jacobian](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-10.png)
 {:.max-width-50-percent}
 
-The last issue that needs to be solved is generating data for the system. Since the system is inverted, the system has most likely turned from an attractor to a repellor and thus any trajectory will wander off to infinity. Therefore, we use the forward system&#8217;s equations and use the linearizations for the inverted system to estimate the Lyapunov spectrum. You can use the following [Python program](/2011/03/lyapunov-spectrum-for-invertible-maps/) and plug in the code above to see an example.
+The last issue that needs to be solved is generating data for the system. Since the system is inverted, the system has most likely turned from an attractor to a repellor and thus any trajectory will wander off to infinity. Therefore, we use the forward system's equations and use the linearizations for the inverted system to estimate the Lyapunov spectrum. You can use the following [Python program](/2011/03/lyapunov-spectrum-for-invertible-maps/) and plug in the code above to see an example.

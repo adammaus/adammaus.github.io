@@ -18,7 +18,7 @@ I'm a software developer based at the University of Wisconsin - Madison and moon
 		</h3>
 		<span class="post-meta">{{ post.date | date: date_format }}</span>
 
-		<p>{{ post.content | strip_html | truncatewords: 30 }}</p>
+		<p>{{ post.excerpt }}</p>
 	</li>
 	{% endif %}
 	{% endfor %}

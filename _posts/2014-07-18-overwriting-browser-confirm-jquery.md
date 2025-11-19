@@ -10,7 +10,7 @@ tags:
   - Javascript
   - jQuery
 ---
-The browser's default confirm function is a synchronous blocking function that usually pops up a dialog box causing a web page to stop executing code and wait for user input. In most browsers, the user is allowed to select &#8220;OK&#8221; or &#8220;Cancel&#8221; and developers usually have very little control over the confirm box other than the message displayed.
+The browser's default confirm function is a synchronous blocking function that usually pops up a dialog box causing a web page to stop executing code and wait for user input. In most browsers, the user is allowed to select "OK" or "Cancel" and developers usually have very little control over the confirm box other than the message displayed.
 
 This can lead to some problems when the confirm box blends into the website such as in the case with Chrome 35.0 or when you simply want more control over the button options.
 

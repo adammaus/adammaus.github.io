@@ -12,7 +12,7 @@ Subgraph Centrality
 
 * Accounts for the participation of a node in all subgraphs of the network
 * Smaller subgraphs are given more weight than larger ones, which makes this measure appropriate for characterizing network motifs (1)
-* Measures density of eigenvalues within the network&#8217;s adjacency matrix **_A_**
+* Measures density of eigenvalues within the network's adjacency matrix **_A_**
 * _SC(i) = SUM<sup>&infin;</sup><sub>t=0</sub>&mu;<sub>t</sub>(i) / t!_ where &mu;<sub>t</sub>(i) is the number of paths starting and ending with node _i_ of length _t_ and can be calculated by _&mu;<sub>t</sub>(i) = (**A**<sup>k</sup>)<sub>ii</sub>_
 * This boils down to _SC(i) = (e<sup><strong>A</strong></sup>)<sub>ii</sub>_ where _e<sup><strong>A</strong></sup>_ is the [matrix exponential](http://en.wikipedia.org/wiki/Matrix_exponential) of **A**
 

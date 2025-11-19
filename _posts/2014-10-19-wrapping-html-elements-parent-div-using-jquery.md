@@ -3,12 +3,13 @@ layout: post
 permalink: "2014/10/wrapping-html-elements-parent-div-using-jquery/"
 title: "Wrapping HTML Elements with a Parent DIV using jQuery"
 date: 2014-10-20T10:13:49-05:00
+excerpt: 'One of our projects required us to add a target element to a parent DIV dynamically. In this example, we are targeting the "child" CSS class and adding any elements that have that CSS class to a DIV with the "parent" CSS class.'
 tags:
   - HTML
   - Javascript
   - jQuery
 ---
-One of our projects required us to add a target element to a parent DIV dynamically. In this example, we are targeting the “child” CSS class and adding any elements that have that CSS class to a DIV with the “parent” CSS class.
+One of our projects required us to add a target element to a parent DIV dynamically. In this example, we are targeting the "child" CSS class and adding any elements that have that CSS class to a DIV with the "parent" CSS class.
 
 {% highlight javascript %}
 // Add a selector to a parent DIV with the wrapping class
@@ -21,7 +22,7 @@ $(targetSelector).each(function() {
 	}
 
 	// Wrap the target element with a parent div with class = wrapperClass
-	var parent = document.createElement(“div”);
+	var parent = document.createElement("div");
 	$(parent).addClass(wrapperClass);
 	var $currNode = $(this).clone();
 

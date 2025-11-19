@@ -3,6 +3,7 @@ layout: post
 permalink: "2014/12/passing-xml-to-sql-server/"
 title: "Passing XML to Sql Server"
 date: 2014-12-22T13:45:54-06:00
+excerpt: One may want to pass an array of data to SQL Server. The most recent reason for me was so I could look for a specific record based on multiple criteria. There are several ways to pass XML to SQL Server. One of the simplest ways to pass the data is as a string. However other options are available such as creating an SqlXML object from a list using the following C# function.
 tags:
   - .NET
   - MS SQL
@@ -11,7 +12,7 @@ tags:
 
 One may want to pass an array of data to SQL Server. The most recent reason for me was so I could look for a specific record based on multiple criteria.
 
-There are several ways to pass XML to SQL Server. One of the simplest ways to pass the data is as a string. However other options are available such as creating an SqlXML object from a list using the following C# function from
+There are several ways to pass XML to SQL Server. One of the simplest ways to pass the data is as a string. However other options are available such as creating an SqlXML object from a list using the following C# function.
 
 {% highlight ruby %}
 /**
@@ -74,7 +75,7 @@ The last important piece is to parse the XML in SQL Server. If you have the foll
 </table>
 {% endhighlight %}
 
-You can access the “id” nodes by using the following:
+You can access the "id" nodes by using the following:
 
 {% highlight bash %}
 SELECT r.id.value('.', 'varchar(50)') AS ID

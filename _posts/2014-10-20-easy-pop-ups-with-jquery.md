@@ -3,6 +3,7 @@ layout: post
 permalink: "2014/12/easy-pop-ups-with-jquery/"
 title: "Easy Pop-Ups with JQuery"
 date: 2014-12-22T13:31:04-06:00
+excerpt: Create a simple pop-up modal box with JQuery.
 tags:
   - CSS
   - HTML
@@ -10,7 +11,7 @@ tags:
   - jQuery
   - PHP
 ---
-JQuery is a powerful Javascript framework and I recently wanted to use it to make a popup submenu for [MausJewelers.com](http://mausjewelers.com/) on non-touch devices. I also wanted to position the popup dynamically on pageload since I wasn’t sure where the link that would trigger the popup would be positioned since the site is responsive.
+JQuery is a powerful Javascript framework and I recently wanted to use it to make a popup submenu for [MausJewelers.com](http://mausjewelers.com/) on non-touch devices. I also wanted to position the popup dynamically on pageload since I wasn't sure where the link that would trigger the popup would be positioned since the site is responsive.
 
 You start with a DIV that contains the content to be displayed that you can trigger using the OnMouseOver event on a link or other HTML element. You can hide the popup using the OnMouseOut event event. In this example, the popup is triggered when the user positions their mouse over the Showcase link as shown here:
 

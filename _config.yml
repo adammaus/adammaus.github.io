@@ -20,7 +20,7 @@
 
 title: Adam Maus
 description: >-
-  A software developer based at the University of Wisconsin - Madison, Adam moonlights as a Wisconsin Master Naturalist, Volunteer, and Researcher.
+  Developer at UW-Madison and also a Master Naturalist, Researcher, etc.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -29,17 +29,16 @@ theme: minima
 
 plugins:
   - jekyll-feed
-  - jekyll-pdf-embed
-
-defaults:
-  - scope:
-      path: "assets/pdf"
-    values:
-      image: true
 
 sass:
   sass_dir: _sass
   style: compressed
+
+header_pages:
+  - about.md
+  - contact.md
+  - cooking.md
+  - search.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.

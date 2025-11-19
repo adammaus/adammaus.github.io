@@ -22,7 +22,7 @@ The following libraries will be required to use the script I will demonstrate us
 4. MatPlotLib (used for graphing and visualization)
 5. Other libraries such as SetupTools may be required depending on your system
 
-You can download these from their websites or if you are using Windows &#8220;[Unofficial Windows Binaries for Python Extension Packages](http://www.lfd.uci.edu/~gohlke/pythonlibs/)&#8221;
+You can download these from their websites or if you are using Windows "[Unofficial Windows Binaries for Python Extension Packages](http://www.lfd.uci.edu/~gohlke/pythonlibs/)"
 
 With the packages installed, we can begin to build a program that fits an SVR model to chaotic data. First, we define a time series. In this case, I will use the [Delayed Henon Map](/2011/04/delayed-henon-map-sensitivities/) with a delay of 4, for more information please see my posts on that system.
 

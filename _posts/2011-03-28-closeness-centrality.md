@@ -12,7 +12,7 @@ tags:
 Closeness Centrality
 
 * Nodes with short geodesic (shortest path between two nodes) distances to other nodes tend to have higher closeness
-* A vertex&#8217;s closeness is defined as the inverse of the mean geodesic distance from vertex _v_ to any other vertex in the graph
+* A vertex's closeness is defined as the inverse of the mean geodesic distance from vertex _v_ to any other vertex in the graph
 * Given the definition of Closeness, a large number of algorithms exist to compute it efficiently.
 * Varying algorithms also rank closeness so no single algorithm works best.
 

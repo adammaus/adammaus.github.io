@@ -22,17 +22,17 @@ However, it is important to note, that it will only link URLS that are one word.
 '   NewMsg: The linked the links in the text
 Function LinkText(ByVal Msg As String)
 	' Remove all hrefs (so we can replace them)
-	Msg = Msg.Replace("&lt;/a>", "")
-	Msg = System.Text.RegularExpressions.Regex.Replace(Msg, "&lt;a[^>]*>?","")
+	Msg = Msg.Replace("</a>", "")
+	Msg = System.Text.RegularExpressions.Regex.Replace(Msg, "<a[^>]*>?","")
 
 	Dim MatchObj as MatchCollection = Regex.Matches(Msg, "(htt(p|ps)://.+?)($|\s+)")
 
 	Dim NewMsg As String = Msg
 	For Each m As Match In MatchObj
 		NewMsg = System.Text.RegularExpressions.Regex.Replace(NewMsg,
-					m.Groups(0).Value, "&lt;a&nbsp;
+					m.Groups(0).Value, "<a&nbsp;
 					href=""" & m.Groups(1).Value & """>"
-					& m.Groups(1).Value & "&lt;/a>"
+					& m.Groups(1).Value & "</a>"
 					& m.Groups(3).Value
 				)
 	Next

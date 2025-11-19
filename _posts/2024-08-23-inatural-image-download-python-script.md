@@ -3,6 +3,7 @@ layout: post
 permalink: "2024/08/inatural-image-download-python-script/"
 title: "iNatural Image Download Python Script"
 date: 2024-08-23T10:12:32-05:00
+excerpt: A small project in an attempt to replicate the results in Justen et al. 2021.
 tags:
   - Machine Learning
   - Python

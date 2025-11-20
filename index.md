@@ -3,7 +3,7 @@ layout: page
 ---
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 
-I'm a software developer based at the University of Wisconsin - Madison and moonlight as a Wisconsin Master Naturalist, Volunteer, and Researcher.
+I'm a software developer at the University of Wisconsin - Madison and moonlight as a Wisconsin Master Naturalist, Volunteer, and Researcher.
 
 <hr />
 

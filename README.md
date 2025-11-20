@@ -5,6 +5,7 @@
 
 # Resources
 * https://devhints.io/jekyll
+* https://github.com/jekyll/minima
 
 # Installation
 1. Install Ruby and Bundler

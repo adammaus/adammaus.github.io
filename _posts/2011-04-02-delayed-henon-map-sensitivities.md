@@ -14,7 +14,7 @@ What previous days' weather affected today's weather? Historically, which states
 
 Modelling the weather, politics, and economics would be a very difficult task but we can explore questions like this in less complex mathematical systems such  as the delayed Henon map [1]. The delayed Henon map is a time-delayed system represented by following equation:
 
-![x_{t} =1-1.6x_{t-1}^2+.1x_{t-d}](/assets/imgs/2011-04-02-delayed-henon-map-sensitivities/image-1.png)
+![x_{t} =1-1.6x_{t-1}^2+.1x_{t-d}](/assets/posts/2011-04-02-delayed-henon-map-sensitivities/image-1.png)
 {:.max-width-50-percent}
 
 Since it has an adjustable _d_ parameter, which represents what dimension the function can be embedded in and provides us with a knob to turn to explore high dimensional dynamics. We can explore many different features about this map, the correlation dimension, fractal dimension, Lyapunov exponents, and much more but our primary focus will be looking at the sensitivities for this map. If you are interested in more information about this map, please consult Sprott 2005, a full reference is below. For the rest of this post, I will be using _d_=4. As we will see, this is more than adequate for the analysis I will show, but one could easily use _d_ = 1456 if they wanted to. Due to the linearity of **x<sub>t-d</sub>**, a different choice of _d_ will arrive at almost the same results.
@@ -23,23 +23,23 @@ So, how are the three questions posed above tied together? They all attempt to a
 
 For the delayed Henon map, this would be akin to asking, how does **x<sub>t-1</sub>, x<sub>t-d</sub>** affect **x<sub>t</sub>**. We can infer this by taking the partial derivative of **x<sub>t</sub>** with respect to each time lag. Using a partial derivative is like asking, if I vary **x<sub>t-1</sub>, x<sub>t-d</sub>** just slightly, how will **x<sub>t</sub>** change. For the obviously non-zero time lags that would be:
 
-![\frac{\partial x_t}{\partial x_{t-1}}=-3.2x_{t-1}](/assets/imgs/2011-04-02-delayed-henon-map-sensitivities/image-2.png)
+![\frac{\partial x_t}{\partial x_{t-1}}=-3.2x_{t-1}](/assets/posts/2011-04-02-delayed-henon-map-sensitivities/image-2.png)
 {:.max-width-50-percent}
 
-![\frac{\partial x_t}{\partial x_{t-d}}=.1](/assets/imgs/2011-04-02-delayed-henon-map-sensitivities/image-3.png)
+![\frac{\partial x_t}{\partial x_{t-d}}=.1](/assets/posts/2011-04-02-delayed-henon-map-sensitivities/image-3.png)
 {:.max-width-50-percent}
 
 To accurately determine how much the output of the function varies when each time lag is perturbed, we need to find the mean of the absolute values of the partial derivatives around the attractor. Thus we have:
 
-![\frac{\partial x_t}{\partial x_{t-1}}=S(1)=\frac{\sum_{k=d}^{n}\|-3.2x_{t-1}\|}{n-d}](/assets/imgs/2011-04-02-delayed-henon-map-sensitivities/image-4.png)
+![\frac{\partial x_t}{\partial x_{t-1}}=S(1)=\frac{\sum_{k=d}^{n}\|-3.2x_{t-1}\|}{n-d}](/assets/posts/2011-04-02-delayed-henon-map-sensitivities/image-4.png)
 {:.max-width-50-percent}
 
-![\frac{\partial x_t}{\partial x_{t-d}}=S(d)=\frac{\sum_{k=d}^{n}\|.1\|}{n-d}](/assets/imgs/2011-04-02-delayed-henon-map-sensitivities/image-5.png)
+![\frac{\partial x_t}{\partial x_{t-d}}=S(d)=\frac{\sum_{k=d}^{n}\|.1\|}{n-d}](/assets/posts/2011-04-02-delayed-henon-map-sensitivities/image-5.png)
 {:.max-width-50-percent}
 
 Since the delayed Henon map has a chaotic attractor and the values of **x<sub>t</sub>** vary, you can estimate the value of the sensitivities for 10,000 iterations of the time series. Initializing the map with a vector such as [.1, .1, .1, .1], we get the following strange attractor (with the first 1,000 iterations removed):
 
-![Strange Attractor of Delayed Henon Map](/assets/imgs/2011-04-02-delayed-henon-map-sensitivities/image-6.png)
+![Strange Attractor of Delayed Henon Map](/assets/posts/2011-04-02-delayed-henon-map-sensitivities/image-6.png)
 {:.centered.max-width-50-percent}
 
 Delayed Henon Map with 9,000 points (<em>d</em>=4)

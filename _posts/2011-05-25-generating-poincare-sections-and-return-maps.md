@@ -14,18 +14,18 @@ Using the iterative 4-th order Runge-Kutta method as described [here](https://bl
 
 We will use the [Rossler attractor](http://en.wikipedia.org/wiki/R%C3%B6ssler_attractor) for this example,
 
-![Rossler equation 1](/assets/imgs/2011-05-25-generating-poincare-sections-and-return-maps/image-1.png)
+![Rossler equation 1](/assets/posts/2011-05-25-generating-poincare-sections-and-return-maps/image-1.png)
 {:.max-width-50-percent}
 
-![Rossler equation 2](/assets/imgs/2011-05-25-generating-poincare-sections-and-return-maps/image-2.png)
+![Rossler equation 2](/assets/posts/2011-05-25-generating-poincare-sections-and-return-maps/image-2.png)
 {:.max-width-50-percent}
 
-![Rossler equation 3](/assets/imgs/2011-05-25-generating-poincare-sections-and-return-maps/image-3.png)
+![Rossler equation 3](/assets/posts/2011-05-25-generating-poincare-sections-and-return-maps/image-3.png)
 {:.max-width-50-percent}
 
 With a, b, and c set to 0.2, 0.2, and 5.7, respectively.
 
-![The Rosseler Attractor](/assets/imgs/2011-05-25-generating-poincare-sections-and-return-maps/image-4.png)
+![The Rosseler Attractor](/assets/posts/2011-05-25-generating-poincare-sections-and-return-maps/image-4.png)
 {:.centered.max-width-50-percent}
 
 A short time series from the Rosseler Attractor
@@ -36,7 +36,7 @@ Poincare sections are important for visualizing an attractor that is embedded in
 
 To build a Poincaré section, imagine that you have selected a slice of phase space. Every time the orbit passes through that slice, we collect a point. We repeat this over and over to create an image of what the attractor looks like in that slice of space.
 
-![The Rosseler Attractor Return Map](/assets/imgs/2011-05-25-generating-poincare-sections-and-return-maps/image-5.png)
+![The Rosseler Attractor Return Map](/assets/posts/2011-05-25-generating-poincare-sections-and-return-maps/image-5.png)
 {:.centered.max-width-50-percent}
 
 Return map for the Y and Z variables where the value of X is between 3.5 and 3.75
@@ -45,7 +45,7 @@ Return map for the Y and Z variables where the value of X is between 3.5 and 3.7
 
 We can also find local maximums to create a return map. In the following graph, we look for points that are local maximums and plot them versus the previous local maximum.
 
-![The Rosseler Attractor Return Map](/assets/imgs/2011-05-25-generating-poincare-sections-and-return-maps/image-6.png)
+![The Rosseler Attractor Return Map](/assets/posts/2011-05-25-generating-poincare-sections-and-return-maps/image-6.png)
 {:.centered.max-width-50-percent}
 
 The local maxima of the variable X versus previous local maxima of the variable X

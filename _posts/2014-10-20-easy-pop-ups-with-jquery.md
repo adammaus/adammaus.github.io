@@ -15,7 +15,7 @@ JQuery is a powerful Javascript framework and I recently wanted to use it to mak
 
 You start with a DIV that contains the content to be displayed that you can trigger using the OnMouseOver event on a link or other HTML element. You can hide the popup using the OnMouseOut event event. In this example, the popup is triggered when the user positions their mouse over the Showcase link as shown here:
 
-![Showcase Popup](/assets/imgs/easy-pop-ups-with-jquery-image-1.png){:.centered}
+![Showcase Popup](/assets/posts/2014-10-20-easy-pop-ups-with-jquery/image-1.png){:.centered}
 
 The trickiest part comes when you want to trigger the popup but you want to allow the user to move their mouse over the popup without causing the popup to disappear since their mouse is leaving the link.
 

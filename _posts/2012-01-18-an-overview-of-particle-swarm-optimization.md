@@ -24,35 +24,35 @@ Instead of talking about particles, it is helpful to imagine that the swarm of p
 
 The following set of illustrations show how a swarm could find the minimum of a parabola.
 
-![Function to optimize](/assets/imgs/2012-01-18-an-overview-of-particle-swarm-optimization/image-1.gif){:.centered.max-width-50-percent}
+![Function to optimize](/assets/posts/2012-01-18-an-overview-of-particle-swarm-optimization/image-1.gif){:.centered.max-width-50-percent}
 
 The function we are trying to find the minimum for. In this case f(1.0) = 0.
 {:.centered}
 
 <br>
 
-![Initial position](/assets/imgs/2012-01-18-an-overview-of-particle-swarm-optimization/image-2.gif){:.centered.max-width-50-percent}
+![Initial position](/assets/posts/2012-01-18-an-overview-of-particle-swarm-optimization/image-2.gif){:.centered.max-width-50-percent}
 
 We randomly place 5 particles within the search region. The best performing particle so far is seen in green at about 1.25.
 {:.centered}
 
 <br>
 
-![Positions after step 1](/assets/imgs/2012-01-18-an-overview-of-particle-swarm-optimization/image-3.gif){:.centered.max-width-50-percent}
+![Positions after step 1](/assets/posts/2012-01-18-an-overview-of-particle-swarm-optimization/image-3.gif){:.centered.max-width-50-percent}
 
 All of the particle look at their own position and their neighbors and update their positions and velocities. Often they end up moving towards the best performing particle from the previous step (now seen in blue). The new best performing particle (in green) is close to 0.85.
 {:.centered}
 
 <br>
 
-![Positions after step 2](/assets/imgs/2012-01-18-an-overview-of-particle-swarm-optimization/image-4.gif){:.centered.max-width-50-percent}
+![Positions after step 2](/assets/posts/2012-01-18-an-overview-of-particle-swarm-optimization/image-4.gif){:.centered.max-width-50-percent}
 
 With the next update, the particles start converging to the same positions and overlap slightly. The new best particle is close to 1.0.
 {:.centered}
 
 <br>
 
-![Positions after step 3](/assets/imgs/2012-01-18-an-overview-of-particle-swarm-optimization/image-5.gif){:.centered.max-width-50-percent}
+![Positions after step 3](/assets/posts/2012-01-18-an-overview-of-particle-swarm-optimization/image-5.gif){:.centered.max-width-50-percent}
 
 Almost all of the particles converge to the correct answer in this step. However, further iterations may be necessary to determine if the correction minimum has been achieved.
 {:.centered}

@@ -10,5 +10,5 @@ tags:
 A wrapper program that calculates distances from GPS coordinates in two files.
 
 Versions:
-* [1.1](/assets/files/2011-03-13-gps-distances/gps-distance-1-1.py): Handles CSV files and is more user friendly
-* [1.0](/assets/files/2011-03-13-gps-distances/gps-distance-1-0.py): Initial program
+* [1.1](/assets/posts/2011-03-13-gps-distances/gps-distance-1-1.py): Handles CSV files and is more user friendly
+* [1.0](/assets/posts/2011-03-13-gps-distances/gps-distance-1-0.py): Initial program

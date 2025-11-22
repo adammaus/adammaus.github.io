@@ -15,4 +15,4 @@ This code was tested on several invertible maps: Henon Map, Delayed Logistic Map
 
 Adapted strongly from [WOLFMAP.BAS](http://sprott.physics.wisc.edu/chaos/wolfmap.bas) and based on research by Wolf et al. [Determining Lyapunov Exponents from a Time Series](https://venturi.soe.ucsc.edu/sites/default/files/Lyapunov_exponents.pdf)
 
-See the Code: [le-spectrum-map.py](/assets/files/2011-03-21-lyapunov-spectrum-for-invertible-maps/test-data.txt)
+See the Code: [le-spectrum-map.py](/assets/posts/2011-03-21-lyapunov-spectrum-for-invertible-maps/le-spectrum-map.py)

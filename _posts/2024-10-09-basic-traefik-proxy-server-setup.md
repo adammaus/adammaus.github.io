@@ -20,10 +20,10 @@ After going through the server provisioning and setup process, you should see so
 
 __Domain 1: Codenamed Alice__
 
-![Image of Alice's Website](/assets/imgs/basic-traefik-proxy-server-setup-image-1.png)
+![Image of Alice's Website](/assets/posts/2024-10-09-basic-traefik-proxy-server-setup/image-1.png)
 
 __Domain 2: Codenamed Bob__
 
-![Image of Bob's Website](/assets/imgs/basic-traefik-proxy-server-setup-image-2.png)
+![Image of Bob's Website](/assets/posts/2024-10-09-basic-traefik-proxy-server-setup/image-2.png)
 
 I will say that I was pleasantly surprised by how easy it was to set up. The server running Traefik and Docker is extremely light, as you can see in [provision-script.sh](https://github.com/adammaus/basic-traefik-setup/blob/main/provision-script.sh). This means server updates should be minimal and we could easily tear down and spin up a new server as needed. I hope you find the [instructions](https://github.com/adammaus/basic-traefik-setup) helpful!

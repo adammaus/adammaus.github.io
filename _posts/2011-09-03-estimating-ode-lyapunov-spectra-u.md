@@ -14,7 +14,7 @@ tags:
 ---
 Wolf _et al_. (1985) outlined an algorithm that estimates the Lyapunov spectra of systems whose equations are known using local Jacobian matrices and Gram-Schmidt orthonormalization. Python code is available for Wolf's algorithm and [discrete maps](/2011/07/lyapunov-spectra-of-inverted-discrete-dynamical-systems/) and their inverted counterparts. I have adapted [this code](2011/03/lyapunov-spectrum-for-invertible-maps/) to estimate Lyapunov spectra for continuous-time systems like the [Lorenz](http://en.wikipedia.org/wiki/Lorenz_attractor) attractor and [Rossler](http://en.wikipedia.org/wiki/R%C3%B6ssler_attractor) attractor. Additionally, [Python code](2011/05/generating-time-series-for-ordinary-differential-equations/) is available to generate time series for ordinary differential equations. Lyapunov spectrum code is also available on [Clint Sprott's website](http://sprott.physics.wisc.edu/chaos/lespec.htm).
 
-![Lorenz Attractor](/assets/imgs/2011-09-03-estimating-ode-lyapunov-spectra-u-image-1.png)
+![Lorenz Attractor](/assets/posts/2011-09-03-estimating-ode-lyapunov-spectra-u/image-1.png)
 {:.centered.max-width-50-percent}
 
 Lorenz Attractor

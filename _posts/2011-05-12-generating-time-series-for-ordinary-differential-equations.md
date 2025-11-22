@@ -13,16 +13,16 @@ tags:
 ---
 Ordinary Differential Equations (ODEs) can be used to define systems in fields as varied as biology to engineering to mathematics. These equations express a relationship between an unknown function and its derivative. One example, the [Rossler attractor](http://en.wikipedia.org/wiki/R%C3%B6ssler_attractor):
 
-![Rossler equation 1](/assets/imgs/2011-05-12-generating-time-series-for-ordinary-differential-equations/image-1.png)
+![Rossler equation 1](/assets/posts/2011-05-12-generating-time-series-for-ordinary-differential-equations/image-1.png)
 {:.max-width-50-percent}
 
-![Rossler equation 2](/assets/imgs/2011-05-12-generating-time-series-for-ordinary-differential-equations/image-2.png)
+![Rossler equation 2](/assets/posts/2011-05-12-generating-time-series-for-ordinary-differential-equations/image-2.png)
 {:.max-width-50-percent}
 
-![Rossler equation 3](/assets/imgs/2011-05-12-generating-time-series-for-ordinary-differential-equations/image-3.png)
+![Rossler equation 3](/assets/posts/2011-05-12-generating-time-series-for-ordinary-differential-equations/image-3.png)
 {:.max-width-50-percent}
 
-![The Rosseler Attractor](/assets/imgs/2011-05-12-generating-time-series-for-ordinary-differential-equations/image-4.png)
+![The Rosseler Attractor](/assets/posts/2011-05-12-generating-time-series-for-ordinary-differential-equations/image-4.png)
 {:.centered.max-width-50-percent}
 
 A short time series from the Rosseler Attractor

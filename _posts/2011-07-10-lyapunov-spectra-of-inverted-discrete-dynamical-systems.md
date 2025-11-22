@@ -20,20 +20,20 @@ Here is an example of how to linearize the Henon map and more complex Tinkerbell
 
 The Henon map:
 
-![Henon Map equation 1](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-1.png)
+![Henon Map equation 1](/assets/posts/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-1.png)
 {:.max-width-50-percent}
 
-![Henon Map equation 2](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-2.png)
+![Henon Map equation 2](/assets/posts/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-2.png)
 {:.max-width-50-percent}
 
 The Henon's Jacobian matrix:
 
-![Henon Map Jacobian Matrix](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-3.png)
+![Henon Map Jacobian Matrix](/assets/posts/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-3.png)
 {:.max-width-50-percent}
 
 Linearizing the Henon map:
 
-![Linerizing the Henon map equation](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-4.png)
+![Linerizing the Henon map equation](/assets/posts/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-4.png)
 {:.max-width-50-percent}
 
 Partial Code for Wolf's algorithm:
@@ -57,20 +57,20 @@ def Henon(x, xnew, n):
 
 The Tinkerbell map:
 
-![Tinkerbell Map equation 1](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-5.png)
+![Tinkerbell Map equation 1](/assets/posts/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-5.png)
 {:.max-width-50-percent}
 
-![Tinkerbell Map equation 2](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-6.png)
+![Tinkerbell Map equation 2](/assets/posts/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-6.png)
 {:.max-width-50-percent}
 
 The Tinkerbell's Jacobian matrix:
 
-![Tinkerbell Map Jacobian Matrix](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-7.png)
+![Tinkerbell Map Jacobian Matrix](/assets/posts/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-7.png)
 {:.max-width-50-percent}
 
 Linearizing the Tinkerbell map:
 
-![Linerizing the Tinkerbell map equation](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-8.png)
+![Linerizing the Tinkerbell map equation](/assets/posts/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-8.png)
 {:.max-width-50-percent}
 
 Partial Code for Wolf's algorithm:
@@ -100,12 +100,12 @@ To estimate the exponents, it is necessay to obtain to invert the system's equat
 
 For the Henon map:
 
-![Invert the Jacobian](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-9.png)
+![Invert the Jacobian](/assets/posts/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-9.png)
 {:.max-width-50-percent}
 
 For the Tinkerbell map (and those with a magnifying glass):
 
-![Invert the Jacobian](/assets/imgs/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-10.png)
+![Invert the Jacobian](/assets/posts/2011-07-10-lyapunov-spectra-of-inverted-discrete-dynamical-systems/image-10.png)
 {:.max-width-50-percent}
 
 The last issue that needs to be solved is generating data for the system. Since the system is inverted, the system has most likely turned from an attractor to a repellor and thus any trajectory will wander off to infinity. Therefore, we use the forward system's equations and use the linearizations for the inverted system to estimate the Lyapunov spectrum. You can use the following [Python program](/2011/03/lyapunov-spectrum-for-invertible-maps/) and plug in the code above to see an example.

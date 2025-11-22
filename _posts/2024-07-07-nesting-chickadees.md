@@ -17,14 +17,14 @@ In April, we had a few bouts of snow and rain after some warm weather that must 
 
 We think they had two baby's that fledged over the course of two days (June 19th and 20th). It was quite entertaining to watch the parents try to entice the last one out with food and funny to watch the babies wheel around the yard for a few weeks.
 
-![Chickadee coming out nestbox](/assets/imgs/nesting-chickadees-image-1.jpg)
+![Chickadee coming out nestbox](/assets/posts/2024-07-07-nesting-chickadees/image-1.jpg)
 
 A view from our kitchen window. Gus or Doris taking nesting material out of nest (before adding it back in later.)
 
-![Chickadee at window bird feeder](/assets/imgs/nesting-chickadees-image-2.jpg)
+![Chickadee at window bird feeder](/assets/posts/2024-07-07-nesting-chickadees/image-2.jpg)
 
 Doris visiting a newly installed window feeder in my office. They particularly enjoyed a mix with mealworms while the babies were in the nest box and around the yard.
 
-![Nest box contents that contain moss, hair, and feathers](/assets/imgs/nesting-chickadees-image-3.jpg)
+![Nest box contents that contain moss, hair, and feathers](/assets/posts/2024-07-07-nesting-chickadees/image-3.jpg)
 
 The nice bed of moss, hair, and feathers left after the babies fledged. I think the sandy/dusty stuff in the bottom right corner was from the first batch of nesting material they brought into the nest that had to be removed after it got wet.

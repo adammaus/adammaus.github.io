@@ -15,6 +15,6 @@ Versions:
 1.1: Introduced manual max and min setting, and added name of file to first row in .xls file
 
 Files:
-* [readme.txt](/assets/files/2011-03-21-python-probability-distribution-program/readme.txt)
-* [probability-distro.py](/assets/files/2011-03-21-python-probability-distribution-program/probability-distro.py)
-* [Test Data](/assets/files/2011-03-21-python-probability-distribution-program/test-data.txt)
+* [readme.txt](/assets/posts/2011-03-21-python-probability-distribution-program/readme.txt)
+* [probability-distro.py](/assets/posts/2011-03-21-python-probability-distribution-program/probability-distro.py)
+* [Test Data](/assets/posts/2011-03-21-python-probability-distribution-program/test-data.txt)

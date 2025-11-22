@@ -16,26 +16,26 @@ tags:
 
 Artificial neural networks can be applied to the delayed Henon map[1] and shown to replicate the sensitivities[2] of the map surprisingly well. Models such as neural networks have a rich history with [numerous resources](http://wikipedia.org/wiki/Neural_network) available that describe there use in tasks that range from [automated driving](http://en.wikipedia.org/wiki/Driverless_car) to [medical diagnosis.](http://www.nd.com/apps/medical.html)
 
-The network I will describe is much simpler and only estimates the sensitivities of the delayed Henon map. This network is a single-layer feedforward network that is optimized on next-step prediction. The network, shown below, involves a layer of inputs that connect to a single layer of hidden nodes with some weight **a**. The weighted inputs are then transformed by an activation function, in this case a hyperbolic tangent, within each node and the output ![b hat sub k](/assets/imgs/2011-04-20-modeling-sensitivity-using-neural-networks/image-1.png) is the sum of these hidden node values weighted by **b**. The network shown schematically:
+The network I will describe is much simpler and only estimates the sensitivities of the delayed Henon map. This network is a single-layer feedforward network that is optimized on next-step prediction. The network, shown below, involves a layer of inputs that connect to a single layer of hidden nodes with some weight **a**. The weighted inputs are then transformed by an activation function, in this case a hyperbolic tangent, within each node and the output ![b hat sub k](/assets/posts/2011-04-20-modeling-sensitivity-using-neural-networks/image-1.png) is the sum of these hidden node values weighted by **b**. The network shown schematically:
 
-![Neural Network Schematic](/assets/imgs/2011-04-20-modeling-sensitivity-using-neural-networks/image-2.png)
+![Neural Network Schematic](/assets/posts/2011-04-20-modeling-sensitivity-using-neural-networks/image-2.png)
 {:.max-width-50-percent}
 
 The weights, **a** and **b** are an _n_ x _d_ matrix and _n_ x _1_ vector of real numbers, respectively. The 1 is a bias term that shifts neuron's value around without being tied to an input. The neural network can be represented by:
 
-![Neural Network Equation](/assets/imgs/2011-04-20-modeling-sensitivity-using-neural-networks/image-3.png)
+![Neural Network Equation](/assets/posts/2011-04-20-modeling-sensitivity-using-neural-networks/image-3.png)
 {:.max-width-50-percent}
 
 where _d_ is the embedding dimension or number of inputs in the network and _n_ is the number of neurons in the hidden layer. The network is trained on input data **x** by altering the weights to better fit the target data **x<sub>k</sub>**. For the delayed Henon map, we feed _d_ sequential points from the time series into the network and associate the target as the next point in the time series. The network is trained to fit that next point.
 
-There are numerous network topologies, training methods, and error functions that one can use. One method we use is similar to simulated annealing and hill climbing. In this case, we search a neighborhood of potential solutions with the chance to randomly search a more distant one. If a good solution is found, we move to its neighborhood and start searching again. We slowly shrink the neighborhood size as training progresses to help home in on a good solution. A good solution is one that minimizes the average one-step mean-square distance between predictions from the neural network ![b hat sub k](/assets/imgs/2011-04-20-modeling-sensitivity-using-neural-networks/image-1.png) and the actual data **x<sub>k</sub>**,
+There are numerous network topologies, training methods, and error functions that one can use. One method we use is similar to simulated annealing and hill climbing. In this case, we search a neighborhood of potential solutions with the chance to randomly search a more distant one. If a good solution is found, we move to its neighborhood and start searching again. We slowly shrink the neighborhood size as training progresses to help home in on a good solution. A good solution is one that minimizes the average one-step mean-square distance between predictions from the neural network ![b hat sub k](/assets/posts/2011-04-20-modeling-sensitivity-using-neural-networks/image-1.png) and the actual data **x<sub>k</sub>**,
 
-![e=\frac{\sum^{c}_{k=d%2b1}(\hat{x}_k-x_k)^2}{c-d}](/assets/imgs/2011-04-20-modeling-sensitivity-using-neural-networks/image-4.png)
+![e=\frac{\sum^{c}_{k=d%2b1}(\hat{x}_k-x_k)^2}{c-d}](/assets/posts/2011-04-20-modeling-sensitivity-using-neural-networks/image-4.png)
 {:.max-width-50-percent}
 
 Since the neural network model equations are known, we can easily analyze the sensitivity of a network trained on experimental data such as the delayed Henon map. Following the same procedure detailed in [Delayed Henon Map Sensitivities](/2011/04/delayed-henon-map-sensitivities/), we can take the partial derivative of the function with respect to each of the inputs _j_,
 
-![\frac{\partial%20\hat{x}_k}{\partial%20x_{k-j}}=\sum^{n}_{i=1}a_{ij}b_i\hbox{sech}^2(a_{i0}%2b\sum^{d}_{m=1}a_{im}x_{k-m})](/assets/imgs/2011-04-20-modeling-sensitivity-using-neural-networks/image-5.png)
+![\frac{\partial%20\hat{x}_k}{\partial%20x_{k-j}}=\sum^{n}_{i=1}a_{ij}b_i\hbox{sech}^2(a_{i0}%2b\sum^{d}_{m=1}a_{im}x_{k-m})](/assets/posts/2011-04-20-modeling-sensitivity-using-neural-networks/image-5.png)
 {:.max-width-50-percent}
 
 We could also use a numerical partial derivative instead by perturbing each input one by one and averaging the change in output through the time series.

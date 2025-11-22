@@ -269,7 +269,7 @@ Example Output:
 
 `err:  0.00381722720161`
 
-![Example Output Graph](/assets/imgs/2011-08-17-modelling-chaotic-systems-using-support-vector-regression-and-python-image-1.png)
+![Example Output Graph](/assets/posts/2011-08-17-modelling-chaotic-systems-using-support-vector-regression-and-python/image-1.png)
 {:.centered.max-width-50-percent}
 
 To fit data taken from other systems, simply change the `Timeseries` function.

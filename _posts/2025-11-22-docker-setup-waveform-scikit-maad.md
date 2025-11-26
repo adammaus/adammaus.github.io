@@ -69,6 +69,6 @@ $ docker build -t scikit-maad-container .
 $ docker run -v ./app:/app scikit-maad-container
 {% endhighlight %}
 
-Finally, here is the result, a waveform of an audio file of [Great Horned Owls](/assets/posts/2025-11-22-docker-setup-spectrogram-scikit-maad/sound-1.wav) that I recorded in our backyard.
+Finally, here is the result, a waveform of an audio file of [Great Horned Owls](/assets/posts/2025-11-22-docker-setup-waveform-scikit-maad/sound-1.wav) that I recorded in our backyard.
 
-![Graph of Amplitude over Time of Great Horned Owls](/assets/posts/2025-11-22-docker-setup-spectrogram-scikit-maad/image-1.jpg)
+![Graph of Amplitude over Time of Great Horned Owls](/assets/posts/2025-11-22-docker-setup-waveform-scikit-maad/image-1.jpg)

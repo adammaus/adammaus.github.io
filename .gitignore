@@ -13,3 +13,4 @@ vendor/
 
 # Ignore other files
 .DS_Store
+*.code-workspace

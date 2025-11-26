@@ -1,9 +1,9 @@
 ---
 layout: post
-permalink: 2025/11/docker-setup-spectrogram-scikit-maad/
-title: Basic Docker Setup to show a Spectrogram with scikit-maad
+permalink: 2025/11/docker-setup-waveform-scikit-maad/
+title: Basic Docker Setup to show a waveform with scikit-maad
 date: 2025-11-22T00:00:00-06:00
-excerpt: The basic setup for a Docker container that shows a spectrogram for an audio file using scikit-maad.
+excerpt: The basic setup for a Docker container that shows a waveform for an audio file using scikit-maad.
 tags:
   - Python
   - "scikit-maad"

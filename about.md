@@ -8,7 +8,7 @@ _Open to opportunities. Please reach out [here](/contact/)._
 
 I'm a software developer at the University of Wisconsin – Madison.
 * Currently, I work full-time with the [School of Medicine and Public Health](https://iit.med.wisc.edu/) (SMPH).
-* I also consult for the [Midwest Center of Excellence for Vector-Borne Disease](https://mcevbd.wisc.edu/) (MCEVBD) and [Center for Health Enhancement Systems Studies](https://center.chess.wisc.edu/) (CHESS).
+* I also consult for the [Midwest Center of Excellence for Vector-Borne Disease](https://mcevbd.wisc.edu/) (MCEVBD) and [Center for Health Enhancement Systems Studies](https://center.chess.wisc.edu/) (CHESS) a few hours a month.
 * Prior to switching to SMPH in early 2025, I worked at CHESS for **18 years** in various roles and, in late 2024 - mid-2025, I had a part-time stint at the [Wisconsin Geologic and Natural History Survey](https://home.wgnhs.wisc.edu/) (WGNHS) as their Interim Web Developer while also working at SMPH and CHESS.
 
 Throughout my career, I have always had a passion for helping others through my work. Whether that be helping researchers maintain data for their vein imaging studies going back more than a decade at SMPH, deploying code to share over a 150 years worth of Wisconsin geological research at WGNHS, developing systems for more than 7,000 patients undergoing health crises at CHESS, or building a citizen science app called [The Tick App](https://tickapp.us/) for MCEVBD to track over 15,000 tick reports.
@@ -34,7 +34,7 @@ I avoid the socials but you can find me online at:
 * [ResearchGate](https://www.researchgate.net/profile/Adam_Maus/publications)
 * [OrcID](https://orcid.org/0000-0002-5896-5230)
 
-And if you want anything to put you to sleep, please check out my [Resume/C.V.](/assets/pdf/maus-resume.pdf). (Last updated January 2026)
+And if you want anything to put you to sleep, check out my [Resume/C.V.](/assets/pdf/maus-resume.pdf). (Last updated March 2026)
 
 <object data="/assets/pdf/maus-resume.pdf" width="100%" height="600" type="application/pdf">
    Your browser does not support PDFs. [Download the PDF](/assets/pdf/maus-resume.pdf)

@@ -26,15 +26,15 @@ Outside of my day job, I'm the secretary, website maintainer and, at times, volu
 
 A few other nuggets:
 
-* I enjoy endurance sports like long distance running and triathlons, reading (usually sci-fi but dabble in other genres), cooking, gardening with native plants, wandering around the woods, [Chickadees (Genus Poecile)](https://www.inaturalist.org/taxa/144351-Poecile), and writing.
+* I enjoy endurance sports like long distance running and triathlons, reading (usually sci-fi but dabble in other genres), cooking, birdscaping / gardening with native plants, wandering around the woods, [Chickadees (Genus Poecile)](https://www.inaturalist.org/taxa/144351-Poecile), and writing.
 * [Eric Maus](https://www.ericmaus.com/), my brother, and I were finalists at 2020 Austin Film Festival for a full-length holiday romantic screenplay named "Holiday on the Hills." We've also written the treatment for another holiday romantic screenplay called "Mars by Christmas." We haven't found someone to produce either yet, so let us know if you're interested. By the way, if you're looking for a book to read, you should check out his debut novel, [Women & Whiskey](https://www.ericmaus.com/women-and-whiskey).
 
-I avoid the socials but you can find me online at:
+I avoid social media but you can find me online at:
 * [Github](https://github.com/adammaus)
 * [ResearchGate](https://www.researchgate.net/profile/Adam_Maus/publications)
 * [OrcID](https://orcid.org/0000-0002-5896-5230)
 
-And if you want anything to put you to sleep, check out my [Resume/C.V.](/assets/pdf/maus-resume.pdf). (Last updated March 2026)
+And if you want anything to put you to sleep, check out my full [Resume/C.V.](/assets/pdf/maus-resume.pdf). (Last updated April 2026)
 
 <object data="/assets/pdf/maus-resume.pdf" width="100%" height="600" type="application/pdf">
    Your browser does not support PDFs. [Download the PDF](/assets/pdf/maus-resume.pdf)

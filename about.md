@@ -34,7 +34,7 @@ I avoid social media but you can find me online at:
 * [ResearchGate](https://www.researchgate.net/profile/Adam_Maus/publications)
 * [OrcID](https://orcid.org/0000-0002-5896-5230)
 
-And if you want anything to put you to sleep, check out my full [Resume/C.V.](/assets/pdf/maus-resume.pdf). (Last updated April 2026)
+And if you want anything to put you to sleep, check out my full [Resume/C.V.](/assets/pdf/maus-resume.pdf). (Last updated September 2026)
 
 <object data="/assets/pdf/maus-resume.pdf" width="100%" height="600" type="application/pdf">
    Your browser does not support PDFs. [Download the PDF](/assets/pdf/maus-resume.pdf)
